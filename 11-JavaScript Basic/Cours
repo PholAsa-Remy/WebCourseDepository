@@ -1,0 +1,39 @@
+Step 1 : Learn the basic of JS (no HTML and CSS)
+Step 2 : Manipulate HTML/CSS
+
+Basic : 
+    - Primitive types (Number String Boolean Null Undefined Symbol BigInt)
+    - Where we run our code (In Chrome developper tools console)
+        Inspect > Console
+
+// <- Create a comment
+
+Number : One type for all number !
+    Positive, Negative, Integer, Decimal 
+    Operator : +  -  *  /  %  ()  ** 
+    NaN = Not a Number, Considered as a number but is not a number
+        Ex : (0/0)  (1 + NaN)
+        It's a special Value
+
+typeof varname -> Give the type of the variable
+
+Variable & Let : Store Value with a name
+    Init : let varName = value;
+    Update Val : varName = newValue; | varName += addVal; | varName ++
+
+    const = Constant -> Does not change
+    const PI = 3.14;
+
+    var : Old way to create variable (Now there is no reason to use it anymore)
+    var varName = 26.2;
+
+Boolean : true or false
+    Value : true | false
+    
+Variable Name Convention : 
+    No Space, Doesn't start with digit
+    Best Practices : camelCase = uneNouvelleVariable
+    Use a nice name ! 
+
+
+In JavaScript, value can change type. (Not like TypeScript)
