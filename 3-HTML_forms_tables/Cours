@@ -1,0 +1,45 @@
+--------------------Table <table> -------------------------
+<table></table> -> create the table
+<td></td> -> a cell that contains data*
+<tr></tr> -> table rows (ligne)
+
+<thead></thead> -> Indicate the head of the table
+<tbody></tbody> -> Indicate the body of the table
+<tfooter></tfooter> -> Indicate the bottom of the table
+
+rowspan -> taille en ligne de la cellule <td rowspan = "2">
+colspan -> taille en colone de la cellule <td rowspan = "2">
+
+--------------------Forms <form> -------------------------
+(formulaire)
+Containers for a collection of Inputs and send it.
+action : where it is send <form action ="">
+method : how the information are send <form method="">
+hit enter to send the form
+
+check MDN for all input
+<input> : can be 20+ different types
+    change the attribute type.
+    type : text, password, color , numbers, checkbox, radiobutton, select, range, 
+    name : name to refering the value of the input
+    placeholder : a placeholder value, will be removed when typing
+<label></label> : 
+    <label for="cheese"> Do you like cheese ? </label>
+    <input type = "checkbox" id="cheese">
+    id have to be UNIQUE ! 
+
+<button></button> : if a button is inside a form, it by default submit the form.
+    type : button, submit (<button type="button"></button>
+
+<textarea></textarea>
+
+Form Validation :
+attribut requiered : obligate the input to be filled
+attribut minlength/maxlength : require a minimum/maximum length for the name
+attribut min/max : minimum/maximum value
+attribut pattern : specify the input has to respect the regular expression
+
+
+
+
+

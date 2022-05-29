@@ -1,0 +1,60 @@
+Flexbox : distribute space dynamically
+
+Display : 
+    display:flex 
+    In flexbox, there are two axis :
+        Main axis
+        Cross axis
+
+Flex Direction : Change the Main axis direction 
+    flex-direction:row/row-reverse/column/column-reverse
+
+Justify Content :how the content is distributed across the main axis
+    flex-start -> default
+    flex-end -> pile up to the end of the main axis
+    center -> pile up to the center of the main axis
+    space-between/space-around/space-evenly -> distribute the extra space between the element
+
+Flex-Warp : Activate the warp of element alons the cross axis
+    flex-warp : warp/warp-reverse/nowarp
+    Warp in the Cross Axis
+
+Align Items : Distribute space along the cross axis
+    flex-start -> default
+    flex-end -> pile up to the end of the cross axis
+    center -> pile up to the center of the cross axis
+    base-line -> align with the baseline of the text
+
+Align Content : Distribute space betwenn MULTIPLE column
+    applies only with wrap/warp-reverse
+    align-content : flex-start/ flex-end/center/space-between/space-around/space-evenly
+
+Align Self : Align to the element itself (not the container !)
+    flex-start -> default
+    flex-end -> pile up to the end of the main axis
+    center -> pile up to the center of the main axis
+
+---------------  Flex Sizing Propreties  ------------------------------
+Flex-basis : define the initial width of an element before additional space is distributed (direction of the main axis)
+    flex-basis : 400px; -> initial size is 400 px
+Flex grow : The amount of space an element takes up if there's space (no unit!)
+    flex-grow : 2; -> grow 2 times faster if there is space
+Flex shrink : How much the element can shrink when there isn't enough space (no unit!)
+    flex-shrink : 2; -> shrink 2 times faster if there not enough space
+NB : min-width, min-height, max-width , max-height can be used to restraint the size
+
+Raccourcis : Flex : Permets d'initier les 3 valeurs d'un coup
+
+---------------  Responsive Design  -------------------------------------
+
+Problem : We have now a lot of differents screen size.
+Responsive : Create a single website that can adapt to differents screen size
+
+Media queries : Change the style depending to some parameter (screen size, ...)
+condition : min-width: 600px , orientation : landscape
+
+@media (min-width: 600px) and (max-width : 800px) {
+    h1 {
+        color: purple;
+    }
+} -> when the page is bigger than 800px, the h1 turn purple

@@ -1,0 +1,63 @@
+The Box Model : Everything in CSS is a Box !
+Each box has differents propreties : 
+    Content
+    Padding
+    Border
+    Margin
+
+width and height : set the width and the height of a elements
+
+border : it's the border around the element.
+    border-width : control the thickness
+    border-color : control the color
+    border-style : control the style (pointiller, ...)
+
+    for border, px is often used because it's usually small
+    box-sizing: set what is the size of the element (ex: border-box)
+
+    each attribute have a variant with each side
+    border: 4px dashed green (width style color)
+
+    border-radius : make rounded corners to box.
+
+Padding : espace entre le contenu et le bord, internal spacing
+    métaphore : papier bulle qui recouvre le contenu dans la boite
+    padding-left : 100px;
+    padding: 10px; -> apply padding to all 4 side
+    padding: 5px 10px; -> horizontal vertical
+    padding: 1px 2px 2px -> top horizontal bottom
+    padding: 5px 1px 0 2px -> top right bottom left (clock wise)
+
+Margin : Spacing outside the border, social distance with other element
+    margin : 10px
+    margin: 5px 10px 
+    ... it's the same as padding
+    the body have margin, it can be usefull to first remove it
+
+Display : 
+    possible value (other are on MDN): inline block inline-block
+    inline -> width and height are ignored, does not push elements
+    bloc -> take space, width height isn't ignored ! all things are respected
+    inline-block -> behave like a inline elements, but width, height, padding, margin are respected ! 
+    none -> hide a element, is usefull with javascript
+
+CSS Units : 
+    Absolute : Use primaliry px.
+    Relative : 
+        % : always relative to some other value, percentage of somethings.
+            relative to parents -> width : 50%
+            relative to a values in the element -> line-height: 50% (relative to the elements font-size)
+        ems : relative to another values, depend of the propreties
+            font-size: 2em -> twice the parents font size
+            margin : 1em -> 1em is the font size of the elements itself
+            common issue with ems : they can stack (for nested list, the text grow expenentially bigger(or smaller))
+        rems : Like ems but relative to the root of the html elements instead of parents.
+            font-size : 0.8 rem;
+            often, we will mix rems and ems depending of the situation
+             
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+-Reference Matérial : MDN 
+
+- Squelette HTML :
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Meta données -->
+        <title>Something !</title>
+    </head>
+    <body>
+        <!-- Contenu -->
+    </body>
+</html>
+
+- Heading elements : <h1></h1> <h2></h2> ... <h6></h6>
+- Paragraphe :<p></p>
+- Image : <img src="..." alt="..."> 
+- Anchors point : <a href="..."> </a>
+- Ordered list and unordered list :<ol> </ol> <ul> </ul> <li></li>
+- Comments : <!-- comments -->

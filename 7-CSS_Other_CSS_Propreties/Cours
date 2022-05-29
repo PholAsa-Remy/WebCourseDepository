@@ -1,0 +1,71 @@
+Opacity and Alpha Channel : Transparency 
+there is a rgba, a = how see throws is the color
+Alpha :
+0 <= a <= 1
+background-color: rgba(255,255,255,0.7); (can be used with hexadecimal)
+alpha propreties doesn't heritage to its descendant
+
+Opacity :
+0 <= opacity <= 1
+Same as Alpha, but it affect his descendants.
+
+Position :
+set how a element is position in a document.
+    position : static; -> default
+
+    position : relative; -> keep the document in the flow of the documents
+        top: 100px -> ofset the element of 100 px from its initial position
+        the element is placed relative to his initial position
+
+    position : absolute; -> Remove the space taken by the elements, remove the element from the flow
+        top : 100px; -> it's relative to it's ancestor. if there was no ancestor, relative to the body.
+
+    position : fixed; -> relative to the containing box (the body)
+        used for menu bar;
+    
+    position : sticky -> In the document and then stick on the top
+
+Transition :
+    transition: 1s;
+    proprety name | duration | timing function | delays
+    transition: background-color 3s; -> transition only the background color
+    transition: background-color 3s 1s; -> make a delay of 1sec before the transition start
+    transition: background-color 1s, border-radius 1s;
+
+    Timing function : transition-timing-function (MDN)
+    ease-in, ease-out, cubic-bezier(...)
+    cubic-bezier : https://easings.net/fr
+    commons in hover
+    Please single out the propreties for transition! No transition-all !
+
+Transform : Like Photoshop transform tool
+    there is a lot of function for transform
+    margin-auto -> center the element in it's containers
+    transform : rotate (45deg);
+    transform-origin : bottom-right; -> move the origin
+
+    transform: scale(3,2);
+
+    transform: translateX(300px), translateY(-200%), translate(-200px,100px)
+
+    transform: skew (30 deg); transform: skew (30 deg,5deg);
+
+    We can combine transformation :
+        transform: rotate(90deg) scale(1.3)
+    
+    Transform applies to all the descendants of the elements.
+
+Background : 
+    background-image : "https://images.unsplash.com/photo-1620192488879-3209072d824a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80"
+    background-size : contain (size the image without cropping)
+    background-size : cover (size the image with cropping)
+    background-position : bottom; (where the image start ?)
+    background : the order doesn't matter here.
+    BUT if we use bg-size, we have to put it directly after position!
+    background: center/cover ...
+    we can have multiple background ! 
+
+Google fonts : we can include a font for a website! use it! 
+
+
+

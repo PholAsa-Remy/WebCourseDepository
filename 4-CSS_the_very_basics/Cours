@@ -1,0 +1,40 @@
+CSS : cascalading style sheet
+CSS is all about rules
+rules : 
+selector {
+    propreties:values;
+}
+
+Ways to include a CSS style:
+    1/ Inline (not a good idea) ex:<h1 style="color : purple">Hello World</h1>
+    2/ Style element (not recommended) exemple : <style>h2{color:violet;}</style>
+    3/ External StyleSheet:
+        <link rel="stylesheet" href="app_style.css">
+        link is always in the head !
+
+Different propreties :
+    color : change the color of the text
+    background-color : change the color of the background
+
+Color Systems :
+Named color : Simplest to use but also the most limited. (about 140 colors)
+RGB : Additive, each channel go from 0 to 255 (255 = maxed out, 0 = nothing)
+Hexadecimal : Same as RGB but represented as Hexadecimal (#ffff00)
+To search a certains color, just go look at a color picker on internet
+
+Conseil: ALWAYS CHECK ';' ! 
+
+<!-- Text attribute -->
+text-align : centre|right|left
+font-weight : normal | bold | 400 |
+text-decoration : blue wavy underline | overline | none
+line-height : normal | 2.5 | 150% | 32 px
+letter-spacing : 2.5 px | ...
+
+font-size: 12 px | % | em 
+
+pixels are not recommended for responsive website !
+font-family : Arial, sans-serif, georgia; (the second is backup if the font is not available)
+
+
+

@@ -1,0 +1,26 @@
+HTML = des règles/spécification de comment écrire du HTML (c'est pas une application !)
+
+Block elements = <div></div> | <p></p> | <h1></h1> | ...
+Inline elements = <span></span> | <a></a> | <img> | ...
+
+<div> and <span> -> Groupe les élements ensembles (pour le CSS)
+
+Horizontal rule : <hr> -> Créer une ligne horizontale
+Line Break : <br> -> Retour a la ligne
+Superscript : <sup></sup> -> Exposant 
+Subscript : <sub></sub> -> Indice
+
+HTML Entities : caractères spéciaux (forme : &...;) -> (https://dev.w3.org/html5/html-author/charref)
+
+Semantic markup = Role of a html element -> (change div pour un nom qui est plus parlant, ont le même role que div)
+<main> | <nav> | <section> |<article> | <aside> | <header> | <footer> | <time> | <figure> | ...
+
+main : main content of the page, does not contains repetive elements.
+nav : contains link of navigation (menu, sidebar, ect ...)
+section : standalone section. (exemple : regrouper un chapitre)
+article : self contained composition, idenpendently distributable or reusable 
+aside : not essentials to the documents, inderectly related to the documents
+header : introductory content, often contains navigation ... (can be on a article)
+footer : ending content, often contains navigation ... (can be on a article)
+time : represent a time element
+figure : self contains content with optional caption <figcaption></figcaption> (sous titre)

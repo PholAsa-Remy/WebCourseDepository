@@ -1,0 +1,81 @@
+Rappel : a rule in CSS have this form : 
+selector {
+    propreties : values;
+}
+
+universal selector : (select everything, not recommended)
+* {
+    color: black;
+}
+
+element selector : (select a element)
+h1,p {
+    color: #0F5264;
+}
+
+Each id have to be unique in the HTML! Try to keep them at a minimum number if possible
+id selector : (select an element with a certain id)
+#name_id {
+    background-color: #05A356;
+}
+
+
+class is the same as id, but multiple element can have the same class
+Can group content together ! simply add the attribute class="" in the html
+class selector : (select element that are in a certain class)
+.name_class{
+    text-align : center;
+}
+
+descendant selector :(here, select anchors that are descendant a descendant to li)
+li a {
+    color: teal;
+}
+
+adjacent selector : (select p that are imediatly after a h1)
+h1 + p {
+    color: red
+}
+
+direct child selector : (select li that are direct descendant of div)
+div > li {
+    color:white;
+}
+
+attribute selector :
+input[type="text"]{
+    width: 300px;
+    color: yellow;
+}
+
+pseudo classes selector: :hover, :active, nth-of-type
+a:hover{
+    color:orange;
+}
+.name_class:nth-of-type(3n){
+    background-color:grey;
+}
+
+pseudo elements selector: select a particular part of a selected elements
+h2::first-letter{
+    font-size:50px;
+}
+p::selection{
+    color:#fc8b15;
+}
+
+Cascade: the order the rules are writter are important ! 
+Specificity : When there is a conflict, the most specific rule wins.
+Inline Style > ID > CLASS > Element
+
+
+!important : Set somethings to be Hyper Specific (Not recommended !)
+a {
+    color:white !important;
+}
+
+Inheritance : the elements descendant will get the attribut
+some elements doesn't inherit by default : 
+button,input{
+    color:inherit;
+}

@@ -1,0 +1,79 @@
+WTF is Bootstrap:
+FrameWork : Une base pour un projet, le squelette d'un projet.
+
+2 mains things :
+    Components : button, nav bars
+    Grid system : Help layout the website
+
+To get a particular button from Bootstrap, just do :
+    - Include Bootstrap
+    - Give the corresponding class
+
+Grid system : 
+    Help layout the website. Particular class with row and column (col)
+
+How to include Bootstrap:
+    - Download the full Bootstrap and link the css 
+    - Use a CDN (hosted version of a style sheet)
+
+Every Bootstrap element works with class
+
+container : Contains and pads some content (some pads are here)
+container-fluid : Container that goes to the full width
+container-sm/container-md/container-lg/container-xl : use the container until a certain size.
+We will always work in a container
+
+Buttons (btn): the color of the buttons can be changed !
+    <button type="button" class="btn btn-primary">Primary</button>
+    [Primary secondary Danger ...] is for the semantics of the website
+    There are a lot of variation of the button, check the docs for all of them !
+
+Typography : 
+    display (display-[1/2/3/4]) : give the header a certain size
+    blockquote : (it's also html element) represent some quotation
+        blockquote-footer : make a footer
+    we can align text with [text-center, ...]
+    text-[primary,secondary,...] -> change the color
+
+Badges : Used for displaing count in a label 
+    <span class="badge badge-success">
+    btn-group : make a group of button
+
+Alert : <div class="alert alert-[primary/secondary/warning/...]"> 
+
+Grid System : Create Responsive Layout for a web page
+    It only works in a container
+    We need to create a row using the class "row"
+    every row in Bootstrap have 12 unit to divide 
+    in a row, we need to create colomn (col)
+    If we need equals space, just use the class "col" without a number
+
+Responsive Grid : 
+    There are differents size predefined in bootstrap
+    to specify those size use for exemple :
+    col-sm-8 instead of col-8
+
+Alignment : In bootstrap, we use the terminology of flexbox to align the items
+    justify-content-center
+    justify-content-lg-start
+    align-items-end ...
+
+Form : 
+    Form control : place in the input itself
+    
+Navbar : 
+    class : "navbar" 
+    navbar-light / navbar-dark -> text of the navbar
+
+    collapse : Collapse content
+    navbar-expend-lg : show the collapsed content on lg screen
+    navbar-toggler : The burger to show the collapsed content
+        data-target : what to expand (the id)
+        data-toggle="collapse"
+        you must for making it work the javascript of Bootstrap
+    fixed-top : stay on top
+    sticky-top : stay on top after we scroll throws it
+
+Bootstrap Icons : Free set of icons 
+    SVG : vector drawing, information to make the icons
+    Font-awesome website for icons
