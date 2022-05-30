@@ -1,3 +1,4 @@
+/*
 Step 1 : Learn the basic of JS (no HTML and CSS)
 Step 2 : Manipulate HTML/CSS
 
@@ -5,8 +6,16 @@ Basic :
     - Primitive types (Number String Boolean Null Undefined Symbol BigInt)
     - Where we run our code (In Chrome developper tools console)
         Inspect > Console
+    - Run code from file : Create a file .js + in a html file add <script src="..."></script>
+    put script at the end of the html file
 
 // = Create a comment
+Basic function :
+    console.log("Hello") -> print
+    console.warn("Ouch") -> print
+    alert("Hi There") -> pop up
+    let num = prompt("Please enter a number") -> user input
+    parseInt('101') -> convert
 
 Number : One type for all number !
     Positive, Negative, Integer, Decimal 
@@ -64,3 +73,50 @@ Math Object :
     Math.sqrt(2) -> 4
 
 In JavaScript, value can change type. (Not like TypeScript)
+
+Boolean : 
+    Comparator : < > <= >= == != === !==
+    == -> check if two value is equals, does not care about the type (1 == '1' -> true)
+    === -> check if two value is equals, care about type
+    Always use '===' !
+    if ( boolean ){ action } else if ( boolean ) { action } else { action }
+    Truthy and Falsy values : 
+        false value : false 0 "" null undefined Nan
+        true value : the rest
+    Logical operator : && || ! -> And Or Not
+    switch (day){
+        case 1: 
+            action;
+            break;
+        case 2:
+            action;
+            break;
+        default :
+            action;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    */
